@@ -25,6 +25,7 @@ function App() {
     rol: 'Soy aprendiz SENA',
     foto: fotousuario,
   }
+  
 
   return (
     <div className='layaut'>
