@@ -1,3 +1,6 @@
+import { opcionesMenu } from "../data/menu.js"
+
+
 function Sidebar({ usuario }) {
   return (
     <aside className='sidebar'>
@@ -5,11 +8,13 @@ function Sidebar({ usuario }) {
       <h3 className='sidebar-titulo'>Menú</h3>
       <nav aria-label='Menú lateral'>
         <ul className='sidebar-menu'>
-          <li><a href='#'>🏠 Inicio</a></li>
-          <li><a href='#'>🧑‍🦰 Mi perfil</a></li>
-          <li><a href='#'>💽 Tecnologías</a></li>
-          <li><a href='#'>🫙 Recursos</a></li>
-          <li><a href='#'>📞 Contactos</a></li>
+          {opcionesMenu.map((opcion)=>(
+            <li key={opcion.id}>
+              <a href={opcion.url}>
+                {opcion.icono}{opcion.texto}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
 

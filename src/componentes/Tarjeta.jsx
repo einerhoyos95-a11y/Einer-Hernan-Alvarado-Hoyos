@@ -8,6 +8,7 @@ function Tarjeta({icono, titulo, descripcion, horas, destacada}) {
       <p className='tarjeta-horas'>⌚ {horas} horas </p>
     </article>
   )
+  primer: comit 
 }
 
 export default Tarjeta
